@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+/* body{
+    background-color: white;
+} */
+
+body{
+    @apply bg-white;
+}
+
+.dark body{
+    @apply bg-gray-950
+}
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #030712 */
