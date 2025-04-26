@@ -121,7 +121,7 @@ const inputvalidater = (name,value)=>{
          
       } catch (error) {
          console.error("err",error)
-         alert("failed to message")
+         toast.error("failed to message")
       }
       
      }
