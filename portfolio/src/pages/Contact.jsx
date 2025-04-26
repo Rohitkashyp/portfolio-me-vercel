@@ -6,6 +6,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
+const API_URL= import.meta.env.VITE_API_URL;
+
 
 
 function Contact() {
@@ -97,7 +99,7 @@ const inputvalidater = (name,value)=>{
      if(submitvalidater()){
       try {
         
-         const res = await axios.post('http://localhost:4000/user_info',userinfo)
+         const res = await axios.post(`${API_URL}/user_info`,userinfo)
          if(res.status === 200){
          console.log(res.data)
          // alert("form submit sucessfully")
