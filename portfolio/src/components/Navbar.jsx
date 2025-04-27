@@ -39,7 +39,7 @@ function Navbar() {
                  <Link to="portfolio" smooth={true} duration={500} offset={-100}>Portfolio</Link>
                </li>
                <li className='hover:scale-110 duration-500 cursor-pointer hover:underline'>
-                 <Link to="services" smooth={true} duration={500} offset={-160}>Services</Link>
+                 <Link to="services" smooth={true} duration={500} offset={-120}>Services</Link>
                </li>
                <li className='hover:scale-110 duration-500 cursor-pointer hover:underline'>
                  <Link to="experince" smooth={true} duration={500} offset={-100}>Experiance</Link>
