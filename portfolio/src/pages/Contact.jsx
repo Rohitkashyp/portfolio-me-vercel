@@ -3,9 +3,6 @@ import React, { useState,useEffect } from 'react'
 import axios from "axios"
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-
 const API_URL= import.meta.env.VITE_EMAIL;
 
 
@@ -15,12 +12,6 @@ function Contact() {
  const [userinfo,setUserinfo]= useState({name:'',email:'',message:''})
  const [errors,setErrors]= useState({})
 
-     useEffect(() => {
-       AOS.init({
-         duration: 600,
-         once: true,
-       });
-     }, []);
 
 //  input validater
 
@@ -133,7 +124,7 @@ const inputvalidater = (name,value)=>{
          <h1 className='text-3xl font-semibold dark:text-white'>Contact me</h1>
          <p className=' mt-1 sm:mt-4 text-[18px] font-medium dark:text-white'>Please fill out the form below to contact me.</p>
      </div>
-     <div data-aos="fade-down" className={`border-[1px] border-black max-w-[400px] ${Object.keys(errors).length > 0 ?'h-[430px]':'h-[400px]'} mx-auto mt-4 py-4 px-6 rounded-md bg-[#e2e8f0]`}>
+     <div className={`border-[1px] border-black max-w-[400px] ${Object.keys(errors).length > 0 ?'h-[430px]':'h-[400px]'} mx-auto mt-4 py-4 px-6 rounded-md bg-[#e2e8f0]`}>
         <h1 className='text-2xl font-semibold'>Send Your Message</h1>
         <div className='max-w-[350px] h-[300px] mt-3 flex flex-col gap-3'>
            {/* form */}
