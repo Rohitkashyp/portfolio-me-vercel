@@ -54,7 +54,7 @@ function Home() {
                    </p>
                   </div>
                    <div className='mt-10 text-center'>
-                     <a href="/My-resume.pdf" target='_blank' className='bg-[#b91c1c] text-white font-normal px-3 py-3 rounded-sm shadow hover:bg-transparent hover:text-black dark:hover:text-white hover:border-[1px] transition'>Download Resume</a>
+                     <a href="/My-Resume.pdf" target='_blank' className='bg-[#b91c1c] text-white font-normal px-3 py-3 rounded-sm shadow sm:hover:bg-transparent sm:hover:text-black sm:dark:hover:text-white sm:hover:border-[1px] transition'>Download Resume</a>
                    </div>
              </div>
              <div className='order-1 min-[740px]:order-2 flex justify-center items-center h-full'>
