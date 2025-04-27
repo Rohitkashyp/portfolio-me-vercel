@@ -42,6 +42,7 @@ app.post('/user_info', async(req,res)=>{
   } catch (error) {
     console.error("Error sending email",error)
     res.status(500).send("Something went wrong email not sent")
+    // console.log(error)
   }
 })
 
